@@ -63,7 +63,7 @@ export async function generateMetadata({
     
     imageUrl:`${appUrl}/opengraph-image?fid=${fid}`,
     button: {
-      title: "Check Your $DEGEN Stats",
+      title: `Your fid= ${fid}`,
     action: {
       type: "launch_frame",
       name: "$DEGEN STATS",
