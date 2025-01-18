@@ -21,12 +21,11 @@
 //   );
 // }
 import { ImageResponse } from "next/og";
-export default async function Image(fid: string) {
-  // const url = new URL(req.url);
-  // const fid = url.searchParams.get("fid");
+export default async function Image(req: Request) {
   const appUrl = process.env.NEXT_PUBLIC_URL;
   const today = new Date().toLocaleDateString(); // Format the date to a string
-
+  const url = new URL(req.url); // Extract the URL object
+  const fid = url.searchParams.get("fid"); // Get `fid` from query parameters
   interface AllowanceData {
     snapshot_day: string;
     fid: string;
