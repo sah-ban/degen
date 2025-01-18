@@ -11,7 +11,6 @@ export async function GET(req: Request) {
     user_rank: string;
     tip_allowance: string;
     remaining_tip_allowance: string;
-    wallet_addresses: any[];
   }
 
   interface DegenStats {
@@ -53,8 +52,8 @@ export async function GET(req: Request) {
             tw="w-15 h-15 rounded-lg mr-4"
           />
           <div tw="flex flex-col">
-            <span tw="flex text-2xl">"Anonymous"</span>
-            <span tw="flex text-1xl">@"unknown"</span>
+            <span tw="flex text-2xl">Anonymous</span>
+            <span tw="flex text-1xl">unknown</span>
           </div>
         </div>
         <div tw="flex text-2xl justify-center text-[#38BDf8] mt-2">
@@ -107,9 +106,4 @@ export async function GET(req: Request) {
     }
   );
 
-  function create(){
-    return(
-      <div tw="flex flex-col w-full h-full bg-[#1e293b] text-[#FFDEAD]">hahahahahahahaha</div>
-    )
-  }
 }
