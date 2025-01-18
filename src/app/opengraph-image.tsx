@@ -21,9 +21,9 @@
 //   );
 // }
 import { ImageResponse } from "next/og";
-export async function GET(req: Request) {
-  const url = new URL(req.url);
-  const fid = url.searchParams.get("fid");
+export default async function Image(fid: string) {
+  // const url = new URL(req.url);
+  // const fid = url.searchParams.get("fid");
   const appUrl = process.env.NEXT_PUBLIC_URL;
   const today = new Date().toLocaleDateString(); // Format the date to a string
 
