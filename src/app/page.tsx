@@ -57,9 +57,11 @@ export async function generateMetadata({
 
   const frame = {
     version: "next",
-    imageUrl: fid 
-    ? `${appUrl}/opengraph-image?fid=${fid}` 
-    : `https://raw.githubusercontent.com/cashlessman/images/refs/heads/main/cover2.jpg`,    
+    // imageUrl: fid 
+    // ? `${appUrl}/opengraph-image?fid=${fid}` 
+    // : `https://raw.githubusercontent.com/cashlessman/images/refs/heads/main/cover2.jpg`,    
+    
+    imageUrl:`${appUrl}/opengraph-image?fid=${fid}`,
     button: {
       title: "Check Your $DEGEN Stats",
     action: {
