@@ -21,9 +21,17 @@
 //   );
 // }
 import { ImageResponse } from "next/og";
-export default async function GET(req: Request) {
-  const url = new URL(req.url);
-  const fid = url.searchParams.get("fid");
+
+interface Props {
+  searchParams: Promise<{
+    fid: string;
+  }>;
+}
+export default async function Image ({ searchParams }: Props): Promise<ImageResponse> {
+  const { fid } = await searchParams;
+
+  // const url = new URL(req.url);
+  // const fid = url.searchParams.get("fid");
   const appUrl = process.env.NEXT_PUBLIC_URL;
   const today = new Date().toLocaleDateString(); // Format the date to a string
 
@@ -74,7 +82,7 @@ export default async function GET(req: Request) {
             tw="w-15 h-15 rounded-lg mr-4"
           />
           <div tw="flex flex-col">
-            <span tw="flex text-2xl">Anonymous</span>
+            <span tw="flex text-2xl">Anonymous{fid}</span>
             <span tw="flex text-1xl">unknown</span>
           </div>
         </div>
