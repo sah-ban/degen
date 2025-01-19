@@ -1,7 +1,14 @@
 import { ImageResponse } from "next/og";
-export async function GET(req: Request) {
-  const url = new URL(req.url);
-  const fid = url.searchParams.get("fid");
+import { NextRequest} from "next/server";
+
+
+export async function GET(req: NextRequest) {
+
+// export async function GET(req: Request) {
+  // const url = new URL(req.url);
+  // const fid = url.searchParams.get("fid");
+  const fid = req.nextUrl.searchParams.get("fid");
+
   const appUrl = process.env.NEXT_PUBLIC_URL;
   const today = new Date().toLocaleDateString(); // Format the date to a string
 
