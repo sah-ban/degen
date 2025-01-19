@@ -24,11 +24,17 @@ export async function GET(req: NextRequest) {
     allowancesData: AllowanceData[];
     points: string;
     pointsRank: string;
+    pfpUrl: string;
+    username: string;
+    display_name: string;
   }
 
   let data: AllowanceData | null = null;
   let points: string | null = null;
   let pointsRank: string | null = null;
+  let pfpUrl: string = "";
+  let username: string = "";
+  let display_name: string = "";
 
   if (fid) {
     try {
@@ -44,6 +50,9 @@ export async function GET(req: NextRequest) {
       }
       points = responseData.points;
       pointsRank = responseData.pointsRank;
+      pfpUrl = responseData.pfpUrl;
+      username = responseData.username;
+      display_name = responseData.display_name;
     } catch (err) {
       console.error("Error fetching Degen Stats:", err);
     }
@@ -54,13 +63,13 @@ export async function GET(req: NextRequest) {
       <div tw="flex flex-col w-full h-full bg-[#1e293b] text-[#FFDEAD]">
         <div tw="flex items-center justify-center text-white mt-7">
           <img
-            src="https://imagedelivery.net/BXluQx4ige9GuW0Ia56BHw/a74b030e-2d92-405c-c2d0-1696f5d51d00/original"
+            src={pfpUrl}
             alt="Profile"
             tw="w-15 h-15 rounded-lg mr-4"
           />
           <div tw="flex flex-col">
-            <span tw="flex text-2xl">Anonymous</span>
-            <span tw="flex text-1xl">unknown</span>
+            <span tw="flex text-2xl">{display_name}</span>
+            <span tw="flex text-1xl">@{username}</span>
           </div>
         </div>
         <div tw="flex text-2xl justify-center text-[#38BDf8] mt-2">

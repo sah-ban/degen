@@ -41,10 +41,16 @@ export async function GET(req: NextRequest) {
 
     let points = "0";
     let pointsRank = "N/A";
+    let pfpUrl= ""
+    let username=""
+    let display_name=""
 
     if (pointsData.length > 0) {
       points = pointsData[0].points || "0";
       pointsRank = pointsData[0].leaderboard_rank || "N/A";
+      pfpUrl=pointsData[0].avatar_url;
+      username=pointsData[0].fname;
+      display_name=pointsData[0].display_name;
     } else {
       console.log("No data received from the points API");
     }
@@ -58,6 +64,9 @@ export async function GET(req: NextRequest) {
       allowancesData,
       points,
       pointsRank,
+      pfpUrl,
+      username,
+      display_name,
     });
   } catch (error) {
     console.error("Unexpected error:", error);
