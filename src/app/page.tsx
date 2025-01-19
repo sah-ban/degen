@@ -61,7 +61,7 @@ export async function generateMetadata({
     // ? `${appUrl}/opengraph-image?fid=${fid}` 
     // : `https://raw.githubusercontent.com/cashlessman/images/refs/heads/main/cover2.jpg`,    
     
-    imageUrl:`${appUrl}/opengraph-image?fid=${fid}`,
+    imageUrl:`https://image-url-one.vercel.app/pfp?fid=${fid}`,
     button: {
       title: `Your fid= ${fid}`,
     action: {
