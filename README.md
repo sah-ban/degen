@@ -18,8 +18,7 @@ The app provides a comprehensive interface for **DEGEN tipping**, displaying ess
 
 
 ---
-![DEGEN Preview](https://github.com/user-attachments/assets/c99dbe1b-8da1-42f2-a753-e835682d0ef3)
-
+![Image](https://github.com/user-attachments/assets/8134fe16-e0fc-4a04-b680-aa186179107d)
 ## 📦 Getting Started
 
 Follow these steps to set up the project locally:
