@@ -17,8 +17,7 @@ The app provides a comprehensive interface for **DEGEN tipping**, displaying ess
 - [Tailwind CSS](https://tailwindcss.com/)
 
 
----
-![Image](https://github.com/user-attachments/assets/8134fe16-e0fc-4a04-b680-aa186179107d)
+![Image](https://github.com/user-attachments/assets/b676e431-5e30-48c7-bab3-a3b7e77581d6)
 ## 📦 Getting Started
 
 Follow these steps to set up the project locally:
