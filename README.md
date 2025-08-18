@@ -20,7 +20,7 @@ The app provides a comprehensive interface for **DEGEN tipping**, displaying ess
 - **Leaderboards** (Allowance, Points & Raindrops)**:** See top users with highest Allowance and Points
 - **Notifications** ping you when your allowance updates and when you tip or receive a tip.
 ---
-![og](public\screenshot.png)
+![og](public/screenshot.png)
 
 ## 🛠️ Tech Stack
 
