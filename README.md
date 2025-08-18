@@ -1,13 +1,26 @@
 # 🚀 DEGEN – Farcaster Mini App
 
-This is a **Mini App** built for [**Farcaster**](https://farcaster.xyz), a decentralized social media protocol.
+This is a **Mini App** built for [**Farcaster**](https://farcaster.xyz), a decentralized social media protocol to Ttack daily **$DEGEN Tipping** activities in one place.
 
 The app provides a comprehensive interface for **DEGEN tipping**, displaying essential information and interactions in a user-friendly format.
 
 🔗 Learn more about DEGEN on the official [website](https://www.degen.tips).
 
 
+## Features
+
+- **All-in-one dashboard:** See your current day stats, track your tip allowance, track tips received & sent and explore leaderboards.
+- Know **today’s allowance** and **what’s left** at a glance so you can plan tipping precisely.
+- View Total **Tips($DEGEN)** received.
+- Know **Total Tips** given(valid & invalid).
+- **Search** any user's stats to verify activity.
+- Built-in **live $DEGEN price** (spot, 1h, 24h).
+- View your **daily allowance history** from the start of the season.
+- Verify **who tipped you**, **who you tipped** with amounts, valid/invalid status and a link to the cast.
+- **Leaderboards** (Allowance, Points & Raindrops)**:** See top users with highest Allowance and Points
+- **Notifications** ping you when your allowance updates and when you tip or receive a tip.
 ---
+![og](public\screenshot.png)
 
 ## 🛠️ Tech Stack
 
@@ -17,7 +30,6 @@ The app provides a comprehensive interface for **DEGEN tipping**, displaying ess
 - [Tailwind CSS](https://tailwindcss.com/)
 
 
-![Image](https://github.com/user-attachments/assets/b676e431-5e30-48c7-bab3-a3b7e77581d6)
 ## 📦 Getting Started
 
 Follow these steps to set up the project locally:
