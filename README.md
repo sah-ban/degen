@@ -1,6 +1,6 @@
 # 🚀 DEGEN – Farcaster Mini App
 
-This is a **Mini App** built for [**Farcaster**](https://farcaster.xyz), a decentralized social media protocol to Ttack daily **$DEGEN Tipping** activities in one place.
+This is a **Mini App** built for [**Farcaster**](https://farcaster.xyz), a decentralized social media protocol to Track daily **$DEGEN Tipping** activities in one place.
 
 The app provides a comprehensive interface for **DEGEN tipping**, displaying essential information and interactions in a user-friendly format.
 
